@@ -1,0 +1,14 @@
+D:\Programming\MarsRover\MarsRover\MarsRover\bin\Debug\net9.0\MarsRover.deps.json
+D:\Programming\MarsRover\MarsRover\MarsRover\bin\Debug\net9.0\MarsRover.dll
+D:\Programming\MarsRover\MarsRover\MarsRover\bin\Debug\net9.0\MarsRover.pdb
+D:\Programming\MarsRover\MarsRover\MarsRover\obj\Debug\net9.0\MarsRover.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\MarsRover\MarsRover\MarsRover\obj\Debug\net9.0\MarsRover.AssemblyInfoInputs.cache
+D:\Programming\MarsRover\MarsRover\MarsRover\obj\Debug\net9.0\MarsRover.AssemblyInfo.cs
+D:\Programming\MarsRover\MarsRover\MarsRover\obj\Debug\net9.0\MarsRover.csproj.CoreCompileInputs.cache
+D:\Programming\MarsRover\MarsRover\MarsRover\obj\Debug\net9.0\MarsRover.dll
+D:\Programming\MarsRover\MarsRover\MarsRover\obj\Debug\net9.0\refint\MarsRover.dll
+D:\Programming\MarsRover\MarsRover\MarsRover\obj\Debug\net9.0\MarsRover.pdb
+D:\Programming\MarsRover\MarsRover\MarsRover\obj\Debug\net9.0\ref\MarsRover.dll
+D:\Programming\MarsRover\MarsRover\MarsRover\bin\Debug\net9.0\MarsRover.exe
+D:\Programming\MarsRover\MarsRover\MarsRover\bin\Debug\net9.0\MarsRover.runtimeconfig.json
+D:\Programming\MarsRover\MarsRover\MarsRover\obj\Debug\net9.0\MarsRover.genruntimeconfig.cache
