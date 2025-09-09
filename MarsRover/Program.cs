@@ -2,6 +2,7 @@ using MarsRover.Commands;
 using MarsRover.I;
 using MarsRover.Memento;
 using MarsRover.Observers;
+using Microsoft.Extensions.Configuration;
 
 namespace MarsRover;
 
@@ -9,10 +10,16 @@ class Program
 {
     static void Main()
     {
-        int surfaceWidth = 7;
+        var config = new ConfigurationBuilder().AddJsonFile("AppSettings.json").Build();
+        
+        int surfaceWidth =  int.Parse(config["SurfaceWidth"] ?? throw new InvalidOperationException());
+        int surfaceHeight =  int.Parse(config["SurfaceHeight"] ?? throw new InvalidOperationException());
+        string inputPath =  config["InputPath"] ?? throw new InvalidOperationException();
+        string outputPath =   config["OutputPath"] ?? throw new InvalidOperationException();
+        /*int surfaceWidth = 7;
         int surfaceHeight = 9;
         string inputPath = Path.Combine("C:\\MarsRover", "InputOutput", "commands.txt");
-        string outputPath = Path.Combine("C:\\MarsRover", "InputOutput", "history.txt");
+        string outputPath = Path.Combine("C:\\MarsRover", "InputOutput", "history.txt");*/
         
         MarsSurface surface = MarsSurface.Instance(surfaceWidth, surfaceHeight);
         
@@ -29,6 +36,7 @@ class Program
         {
             ICommand? command = CommandFactory.Create(c);
             if (command == null) continue;
+            RoverMemento.Instance().Save(rover);
             rover.ExecuteCommand(command);
             rover.NotifyObservers();
         }

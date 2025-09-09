@@ -10,7 +10,5 @@ public class CollisionObserver : IObserver
         RoverMemento memento = RoverMemento.Instance();
         if (surface.IsObstacle(rover.Position))
             memento.Restore(rover);
-        else
-            memento.Save(rover);
     }
 }

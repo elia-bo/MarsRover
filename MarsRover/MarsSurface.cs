@@ -3,7 +3,8 @@
 public class MarsSurface
 {
     private static MarsSurface? _instance;
-    public int Width, Height;
+    public int Width { get; private set; }
+    public int Height { get; private set; }
     private List<Position>? _obstacles = new();
     
     private MarsSurface(int width, int height)
@@ -30,9 +31,8 @@ public class MarsSurface
                 obstacles.Add(new Position(obstacleX, obstacleY));
         }
         _obstacles = obstacles;
-        //_obstacles = [new Position(0,0)];
     }
-
+    
     public static MarsSurface Instance(int width = 0, int height = 0) 
         => _instance ?? (_instance = new MarsSurface(width, height));
 

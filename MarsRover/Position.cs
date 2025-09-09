@@ -1,6 +1,6 @@
 namespace MarsRover;
 
-public class Position
+public record Position
 {
     public int X { get; set; }
     public int Y { get; set; }
@@ -10,9 +10,6 @@ public class Position
         X  = x;
         Y = y;
     }
-
-    public override bool Equals(object? obj) 
-        => this.X == (obj as Position).X && this.Y == (obj as Position).Y;
     
     public override string ToString()
         => $"({X},{Y})";

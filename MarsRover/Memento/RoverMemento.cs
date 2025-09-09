@@ -16,7 +16,7 @@ public class RoverMemento
 
     public void Restore(Rover rover)
     {
-        if (!_mementos.TryPeek(out var memento)) return;
+        if (!_mementos.TryPop(out var memento)) return;
         rover.Position = memento.Position;
         rover.State = memento.RoverState;
     }

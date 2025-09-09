@@ -3,9 +3,9 @@ namespace MarsRover.I;
 public class IO
 {
     private readonly string _inputFilePath;
-    private readonly string _outputFilePath;
+    private readonly string? _outputFilePath;
 
-    public IO(string inputFilePath, string outputFilePath, Rover rover)
+    public IO(string inputFilePath, string? outputFilePath, Rover rover)
     {
             _inputFilePath = inputFilePath;
             _outputFilePath = outputFilePath;

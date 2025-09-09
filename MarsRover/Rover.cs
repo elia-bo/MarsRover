@@ -26,7 +26,6 @@ public class Rover
             Position roverPosition = new Position(random.Next(0, surface.Width - 1), random.Next(0, surface.Height - 1));
             if (!surface.IsObstacle(roverPosition))
                 return new Rover(roverPosition, new NorthState());
-            //return new Rover(new Position(0, 7), new NorthState());
         }
     }
 

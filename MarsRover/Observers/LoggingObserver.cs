@@ -16,6 +16,6 @@ public class LoggingObserver : IObserver
     public IEnumerable<string> GetLog()
         => _log;
     
-    private string GetLastValidLine()
+    private string? GetLastValidLine()
         => _log.LastOrDefault(x => x != CollisionLine);
 }
